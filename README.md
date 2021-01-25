@@ -1,6 +1,8 @@
 # URL Shortener
 A simple URL shortener made to be used by anyone and everyone for free.
 
+### The app has been deployed to [heroku](https://shortewrer3.herokuapp.com/)!
+
 ## Technologies Used
 + NodeJS
 + Express
