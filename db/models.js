@@ -1,9 +1,12 @@
 const sequelize = require('sequelize');
 var db;
-db = new sequelize({
-    dialect: 'sqlite',
-    storage: __dirname + '/storage.db'
-});
+if(process.env.DATABASE_URL)db = new sequelize(process.env.DATABASE_URL)
+else {
+    db = new sequelize({
+        dialect: 'sqlite',
+        storage: __dirname + '/storage.db'
+    });
+}
 
 const mod = db.define('url', {
     id: {
