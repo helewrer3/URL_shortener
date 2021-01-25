@@ -10,9 +10,9 @@ app.use('/', express.static(path.join(__dirname, 'public')))
 
 db.sync()
 .then(() => {
-    const port = process.env.PORT || 3000
-    app.listen(port, () => console.log(port))    
+    const port = process.env.PORT || 3000;
+    app.listen(port, () => console.log(port));
 })
-.catch((err) => {
-    console.log(err)
+.catch((err) =>{
+    console.error(err);
 })
