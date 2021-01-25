@@ -1,0 +1,21 @@
+#navbar {
+    top: 0px;
+    z-index: 1;
+}
+
+#footer {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    bottom: 0px;
+    background-color: var(--light);
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    min-height: 90vh;    
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: auto;
+}
