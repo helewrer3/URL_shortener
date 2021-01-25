@@ -10,7 +10,7 @@ function url() {
             $.post('/api', {
                 url: $('#inpurl').val()
             }, (data) => {
-                $('#outurl').val(window.location.origin + '/' + data)
+                $('#outurl').val(window.location.origin + '/api/' + data)
             })
         }
         else $('#outurl').val("Please enter a valid URL.")
